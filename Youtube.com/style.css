@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body{
+    font-family: "Roboto", sans-serif;
+
+}
+
+p{
+    margin: 0;
+}
+
+.sec{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.container .left{
+    display: flex;
+    
+}
+.container .left .menu{
+    margin-right: 27px;
+    margin-left: 37px;
+    
+}
+
+.container .left .logo{
+    padding:0 10px  ;
+}
+
+.container .mid{
+    display: flex;   
+}
+.container .mid .sh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(202, 199, 199);
+    background-color: rgb(241, 241, 241);
+    padding: 5px 10px;
+    margin-left: -5px;
+    width: 50px;
+    height: 27px;
+    border-radius: 0 25px 25px 0;
+    position: relative;
+}
+
+.container .mid .sh .toolkit{
+    position: absolute;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    bottom: -43px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.container .mid .voice-search .toolkit{
+    position: absolute;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    bottom: -38px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.container .mid .sh:hover .toolkit, .container .mid .voice-search:hover .toolkit,
+.container .right .create:hover .toolkit,
+.container .right .apps:hover .toolkit,
+.container .right .notification:hover .toolkit{
+    opacity: 1;
+}
+
+.container .mid .search input{
+    width: 27vw;
+    height: 37px;
+    border: 2px solid rgb(202, 199, 199);
+    font-size: 18px;
+    box-shadow: inset 0px 1px 2px #eeeeee;
+    border-radius: 25px 0 0 25px;
+    padding: 0 15px;
+}
+
+.container .mid .voice-search{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .mid .voice-search img{
+   background-color: rgb(241, 241, 241);
+   border-radius: 30px;
+   margin-left: 10px;
+   padding: 8px;
+   
+}
+
+.container .right{
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.container .right .create .toolkit,
+.container .right .apps .toolkit,
+.container .right .notification .toolkit{
+    position: absolute;
+    background-color: rgb(116, 115, 115);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    bottom: -34px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+.container .right .create{
+    margin-right: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container .right .apps{
+    margin-right: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.container .right .notification{
+    margin-right: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+.container .right .no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    position:absolute;
+    background-color: red;
+    padding: 2px;
+    border-radius: 20px;
+    height: 10px;
+    width: 10px;
+    font-size: 13px;
+    bottom: 18px;
+    right: -16px;
+    
+}
+.container .right .profile-pic{
+    margin-right: 15px;
+    
+}
+
+
+.side-bar{
+    width: 100px;
+    height: 600px;
+    /* background-color: lightpink; */
+    font-size: 13px;
+}
+
+.side-bar .sideBar-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    /* margin-top:20px ;
+    margin-bottom: 35px; */
+    height: 73px;
+    margin: 1px 0px;
+}
+
+.side-bar .sideBar-link:hover{
+   background-color: #eeeeee;
+}
+
+.side-bar .sideBar-link:hover, .container .right .no, .container .right .notification, .container .right .apps, .container .right .create, .container .mid .voice-search, .container .mid .sh{
+   cursor: pointer;
+}
+
+
+.details{
+    /* border: 2px solid red; */
+    width: 303px;
+    padding-top: 24px;
+    padding-left: 10px;
+}
+.details:hover{
+    cursor: pointer;
+}
+.details .thm{
+    /* border: 2px solid red; */
+    position: relative;
+    
+}
+.details .thm img{
+   border-radius: 10px;
+    
+}
+
+.details .Video-time{
+   background-color: black;
+   color: white;
+   position: absolute;
+   bottom: 11px;
+   right: 6px;
+   font-size: 14px;
+   padding: 3px;
+   border-radius: 4px;
+   
+}
+
+.details .channel-info{
+    display: flex;
+    padding-left: 4px;
+    padding-top: 10px;
+}
+
+.details .channel-info .channel-pic img{
+    /* border: 2px solid red; */
+    border-radius: 25px;
+    object-fit: cover;
+}
+.details .channel-info .channel-pic:hover{
+    cursor: pointer;
+}
+
+.details .dl{
+    padding-left: 16px;
+}
+
+.details .dl .title{
+    font-size: 16px;
+    font-weight: 500;
+}
+.details .dl .channel-name{
+    padding-top: 15px;
+    font-size: 14px;
+    color: #606060;
+}
+.details .dl .video-details{
+    padding-top: 5px;
+    font-size: 14px;
+    color: #606060;
+}
+
+.kalki{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #f9f9f9;
+    /* border-top: 1px solid rgb(223, 222, 222); */
+    padding-right: 10px;
+}
+
+main{
+    border-top: 1px solid rgb(223, 222, 222);
+}
+
+@media(max-width:900px){
+    .kalki{
+        grid-template-columns: 1fr 1fr;
+    }
+    .kalki .details{
+        padding: 12px;
+    }
+}

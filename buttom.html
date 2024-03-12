@@ -1,0 +1,142 @@
+<style>
+
+    #subcribe{
+       padding: 10px 30px;
+       background-color: green;
+       color: white;
+       transition: opacity 1s;
+       margin: 15px;
+       vertical-align: top;
+    }
+
+    #subcribe:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    #join{
+       padding: 10px 20px;
+       color: blue;
+       border: 2px solid black;
+       transition: background-color 1s, color 1s;
+       margin: 15px;
+       vertical-align: top;
+    }
+
+    #join:hover{
+        background-color: blue;
+        cursor: pointer;
+        color: yellow;
+
+    }
+    #join:active{
+        background: #000;
+    }
+
+    #tweet{
+       padding: 10px 30px;
+       background-color: blue;
+       color: white;
+       border-radius: 20px;
+       transition: box-shadow 1s;
+       margin: 15px;
+       vertical-align: top;
+    }
+
+    #tweet:hover{
+        box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+
+
+    .btn{
+        padding: 10px;
+        margin: 5px;
+    }
+    a{
+        margin: 5px;
+    }
+
+
+    #Shadow{
+        padding: 15px 30px;
+        background-color: rgb(25, 127, 25);
+        color: white;
+        border: none;
+        transition: box-shadow 0.15s;
+    }
+
+    #Shadow:hover{
+       cursor: pointer;
+       box-shadow: 5px 5px 10px rgb(18, 124, 0.15);
+    }
+
+    #Shadow:active{
+    margin-top: 3px;
+    margin-left: 3px;
+    }
+
+    #stretch{
+        padding: 15px 30px;
+        background-color: rgb(25, 127, 25);
+        color: white;
+        border: none;
+        transition: box-shadow 0.15s;
+        transition: padding  0.15s;
+    }
+
+    #stretch:hover{
+        cursor: pointer;
+        padding-bottom: 40px;
+        padding-right: 80px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .manas{
+        margin: 20px;
+        padding: 15px 30px;
+        transition: padding 0.15s;
+    }
+    .manas:hover{
+        cursor: pointer;
+        padding-left: 40px;
+        padding-right: 40px;
+        /* margin-left: 0px;
+        margin-right: 0px; */
+    }
+</style>
+
+<div class="container">
+<button id="subcribe">Subcribe</button>
+
+<button id="join">JOIN</button>
+
+<button id="tweet">Tweet</button>
+</div>
+<hr>
+<div>
+    <button class="btn">Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <button class="btn">Next</button>
+</div>
+<hr>
+<div>
+    <h5>3D Click</h5>
+    <br>
+    <button id="Shadow">Shadow</button>
+</div>
+<hr>
+<div>
+    <button id="stretch">Stretch</button>
+</div>
+<br>
+<hr>
+<div>
+    <button class="manas">One</button>
+    <button class="manas">Two</button>
+    <button class="manas">Three</button>
+</div>
